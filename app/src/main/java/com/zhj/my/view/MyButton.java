@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Scroller;
 
 import com.zhj.my.utils.ViewUtil;
 
@@ -15,24 +16,42 @@ public class MyButton extends View {
     int lastX;
     int lastY;
 
+    Scroller mScroller;
+
 
     public MyButton(Context context) {
         super(context);
+        init(context);
     }
 
     public MyButton(Context context, AttributeSet attrs) {
         super(context, attrs);
+        init(context);
     }
 
     public MyButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        init(context);
     }
 
+    private void init(Context context) {
+        mScroller = new Scroller(context);
+    }
 
     @Override
-    public boolean dispatchTouchEvent(MotionEvent event) {
-        Log.e("zh", "MyButton -> dispatchTouchEvent event=" + ViewUtil.getEventMask(event.getAction()));
-        return super.dispatchTouchEvent(event);
+    public void computeScroll() {
+        if (mScroller.computeScrollOffset()) {
+            ((View) getParent()).scrollTo(mScroller.getCurrX(), mScroller.getCurrY());
+            invalidate();
+        }
+    }
+
+    public void smoothScrollTo(int destX, int destY) {
+        int scrollX = getScrollX();
+        int delta = destX - scrollX;
+        //1000秒内滑向destX
+        mScroller.startScroll(scrollX, 0, delta, 0, 2000);
+        invalidate();
     }
 
     @Override
@@ -42,10 +61,32 @@ public class MyButton extends View {
 
         //return handleEvent2(event);
 
-        return handleEvent3(event);
+//        return handleEvent3(event);
+
+        return handleEvent4(event);
 
     }
 
+    //4 scollTo与scollBy, 这两个函数移动的是View的内容
+    private boolean handleEvent4(MotionEvent event) {
+
+        switch (event.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+                lastX = (int) event.getX();
+                lastY = (int) event.getY();
+                break;
+            case MotionEvent.ACTION_MOVE:
+                int offsetX = (int) (event.getX() - lastX);
+                int offsetY = (int) (event.getY() - lastY);
+
+                ((View) getParent()).scrollBy(-offsetX, -offsetY);
+                break;
+        }
+
+        return super.onTouchEvent(event);
+    }
+
+    //3 动画方式，具体见ScrollerActivity中 myView的点击事件中的代码
     private boolean handleEvent3(MotionEvent event) {
         return super.onTouchEvent(event);
     }
