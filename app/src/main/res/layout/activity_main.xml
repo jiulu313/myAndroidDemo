@@ -21,6 +21,14 @@
 
         </Button>
 
+        <Button
+            android:id="@+id/btnDraw"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="画布">
+
+        </Button>
+
 
 
     </LinearLayout>
