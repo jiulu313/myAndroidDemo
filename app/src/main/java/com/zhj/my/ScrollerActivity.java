@@ -18,20 +18,20 @@ public class ScrollerActivity extends Activity {
         setContentView(R.layout.activity_scroller);
 
 
-        myView = (MyButton) findViewById(R.id.myButton);
-        myView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                //3 动画方式移动view,下面两种动画方式都可以
-//                ObjectAnimator.ofFloat(myView,"translationX",0,300).setDuration(1000).start();
-//                myView.startAnimation(AnimationUtils.loadAnimation(ScrollerActivity.this, R.anim.translate));
-
-
-                myView.smoothScrollTo(-400,0);
-
-            }
-        });
+//        myView = (MyButton) findViewById(R.id.myButton);
+//        myView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                //3 动画方式移动view,下面两种动画方式都可以
+////                ObjectAnimator.ofFloat(myView,"translationX",0,300).setDuration(1000).start();
+////                myView.startAnimation(AnimationUtils.loadAnimation(ScrollerActivity.this, R.anim.translate));
+//
+//
+//                myView.smoothScrollTo(-400,0);
+//
+//            }
+//        });
 
     }
 }

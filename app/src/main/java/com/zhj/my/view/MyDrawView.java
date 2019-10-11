@@ -10,6 +10,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Shader;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 import com.zhj.my.R;
@@ -36,17 +37,29 @@ public class MyDrawView extends View {
 
     Camera camera = new Camera();
 
+//    @Override
+//    protected void onDraw(Canvas canvas) {
+////        canvas.drawColor(Color.parseColor("#ff2233"));
+//        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);
+//
+//        canvas.save();
+//        camera.rotateY(50); // 旋转 Camera 的三维空间
+//        camera.applyToCanvas(canvas); // 把旋转投影到 Canvas
+//        canvas.drawBitmap(bitmap, 0, 0, paint);
+//        canvas.restore();
+//
+//
+//    }
+
+
     @Override
-    protected void onDraw(Canvas canvas) {
-//        canvas.drawColor(Color.parseColor("#ff2233"));
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
 
-        canvas.save();
-        camera.rotateY(50); // 旋转 Camera 的三维空间
-        camera.applyToCanvas(canvas); // 把旋转投影到 Canvas
-        canvas.drawBitmap(bitmap, 0, 0, paint);
-        canvas.restore();
+        int width = MeasureSpec.getSize(widthMeasureSpec);
+        int height = MeasureSpec.getSize(heightMeasureSpec);
 
+        Log.e("zh99","MyDrawView width=" + width + "  height=" + height);
 
     }
 }

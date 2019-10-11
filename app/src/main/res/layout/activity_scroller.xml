@@ -4,12 +4,28 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.zhj.my.view.MyButton
-        android:id="@+id/myButton"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@color/colorAccent">
 
-    </com.zhj.my.view.MyButton>
+    <com.zhj.my.view.MyLinearLayout
+        android:layout_width="600px"
+        android:layout_height="600px"
+        android:background="@color/colorAccent2">
+
+
+<!--        <com.zhj.my.view.MyDrawView-->
+<!--            android:layout_width="50px"-->
+<!--            android:layout_height="60px"-->
+<!--            android:background="@color/colorAccent">-->
+<!--        </com.zhj.my.view.MyDrawView>-->
+
+
+        <com.zhj.my.view.MyButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent3">
+
+        </com.zhj.my.view.MyButton>
+
+    </com.zhj.my.view.MyLinearLayout>
+
 
 </LinearLayout>

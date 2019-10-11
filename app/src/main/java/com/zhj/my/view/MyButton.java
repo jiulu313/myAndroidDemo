@@ -154,4 +154,50 @@ public class MyButton extends View {
 
         return true;
     }
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+
+        int width = MeasureSpec.getSize(widthMeasureSpec);
+        int height = MeasureSpec.getSize(heightMeasureSpec);
+
+        int modeWidth = MeasureSpec.getMode(widthMeasureSpec);
+        int modeHeight = MeasureSpec.getMode(heightMeasureSpec);
+
+
+        int minWidth = 100;
+        int minHeight = 100;
+
+        int resultWidth;
+        int resultHeight;
+
+        if(modeWidth == MeasureSpec.AT_MOST){
+            resultWidth = minWidth;
+        }else if(modeWidth == MeasureSpec.EXACTLY){
+            resultWidth = width;
+        }else {
+            resultWidth = width;
+        }
+
+        if(modeHeight == MeasureSpec.AT_MOST){
+            resultHeight = minHeight;
+        }else if(modeHeight == MeasureSpec.EXACTLY){
+            resultHeight = height;
+        }else {
+            resultHeight = height;
+        }
+
+
+        setMeasuredDimension(resultWidth,resultHeight);
+
+        Log.e("zh99","MyButton onMeasure width=" + width + "  height=" + height + "  width2=" + resultWidth + "  height2=" + resultHeight);
+    }
+
+    @Override
+    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        super.onLayout(changed, left, top, right, bottom);
+        Log.e("zh99","MyButton onLayout width=" + getWidth() + "  height=" + getHeight());
+
+    }
 }
