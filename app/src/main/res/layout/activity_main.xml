@@ -30,6 +30,13 @@
         </Button>
 
 
+<!--        <com.zhj.my.view.MyEditText-->
+<!--            android:id="@+id/myEditText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp">-->
+
+<!--        </com.zhj.my.view.MyEditText>-->
+
 
     </LinearLayout>
 

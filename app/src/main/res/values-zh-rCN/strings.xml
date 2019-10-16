@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Demo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="spinner_list">
+        <item>SPP</item>
+        <item>HID</item>
+       <!--  <item>BLE</item> -->
+    </string-array>
+    <string-array name="spinner_check_list">
+        <item>数据重复</item>
+        <item>数据长度</item>
+    </string-array>
+
+    
+    
+    
+    <string name="send">发送</string>
+    
+    <string name="check">校验</string>
+    <string name="open">打开</string>
+    <string name="confirm">确认</string>
+    <string name="cancle">取消</string>
+    <string name="search">搜索</string>
+    <string name="disconnect">断开</string>
+    <string name="status_self">本机状态：</string>
+    <string name="device_search">搜索到的设备：</string>
+    <string name="data_rev">接收的数据：</string>
+    <string name="row">行数:</string>
+    <string name="select_choose">协议选择：</string>
+    
+    <string name="check_off">未校验</string>
+    <string name="check_on">已校验</string>
+    <string name="check_len">请输入校验长度...</string>
+    <string name="title_one">错误提示1(间歇响铃)</string>
+    <string name="title_two">错误提示2(连续响铃)</string>
+    <string name="title_three">错误提示3(间歇震动)</string>
+    <string name="title_four">错误提示4(持续震动)</string>
+    <string name="save">保存</string>
+    <string name="close">关闭</string>
+    
+    <string name="clear">清空</string>
+    <string name="ord_input">请输入命令字（00获取版本，04低电量查询）...</string>
+    
+    <string name="device">设备</string>
+    <string name="dev_add">设备地址</string>
+    
+    <string name="connect">连接</string>
+    
+    <string name="wrong_len_check">长度或校验位错误</string>
+    
+    <string name="repeat">重复</string>
+    
+    <string name="faul_code">错码</string>
+    <string name="num_top_one">条码数目已达到1000，请及时长按数据栏清空！</string>
+    <string name="num_top_two">条码数目已达到2000，请及时长按数据栏清空！</string>
+    <string name="num_top_three">条码数目已达到3000，请及时长按数据栏清空！</string>
+    <string name="ring_ver">蓝牙指环版本号为：</string>
+    <string name="battle_charge">指环电量低，请及时充电...</string>
+    <string name="battle_ok">指环电量充足，请放心使用</string>
+    <string name="con_fail">连接失败！</string>
+    <string name="con_suc">连接成功</string>
+    <string name="searched">搜索完毕！</string>
+    
+    <string name="searching">搜索中...</string>
+    <string name="status_change">状态改变</string>
+    <string name="pairing">正在配对...</string>
+    <string name="pairing_com">完成配对</string>
+    <string name="pairing_cancle">取消配对</string>
+    
+    <string name="link_status_change">链接状态改变</string>
+    <string name="connected">已连接</string>
+    <string name="connecting">正在连接</string>
+    <string name="disConnected">已断开</string>
+    <string name="disConnecting">正在断开...</string>
+    <string name="bt_status_ch">蓝牙开关状态改变</string>
+    <string name="bt_open">蓝牙已打开</string>
+    <string name="bt_openning">正在打开蓝牙...</string>
+    <string name="bt_close">蓝牙已关闭</string>
+    <string name="bt_closiing">正在关闭蓝牙..."</string>
+    <string name="dev_closed">设备已关闭</string>
+    <string name="dev_opened">设备已打开</string>
+    <string name="data_clean">是否清空数据？</string>
+    <string name="con_pre">准备连接...</string>
+    <string name="no_bt">本设备不支持蓝牙</string>
+    <string name="close_con">断开连接!</string>
+    
+    
+    
+    
+    <string name="bt_wrong">蓝牙异常</string>
+    <string name="android_no_bt">此android设备不支持蓝牙，请更换设备！</string>
+    <string name="selected">您选择的协议为：</string>
+    <string name="BLE_TO_SPP">设备不支持BLE，建议使用SPP</string>
+    <string name="con_BLE">正在连接BLE设备..</string>
+    <string name="send_data">发送数据:</string>
+    <string name="con_ring">请连接蓝牙指环！</string>
+    <string name="data_check">校验数据：</string>
+    <string name="title_ring">响铃</string>
+    <string name="title_rate">震动</string>
+    <string name="ring_len">提示次数</string>
+</resources>

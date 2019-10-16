@@ -1,3 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MyAndroidDemo</string>
+
+    <string name="app_name">Demo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="spinner_list">
+        <item>SPP</item>
+        <item>HID</item>
+       <!--  <item>BLE</item> -->
+    </string-array>
+    <string-array name="spinner_check_list">
+        <item>Repeat data</item>
+        <item>Data length</item>
+    </string-array>
+    
+    <string name="send">Send</string>
+    
+    <string name="check">Check</string>
+    <string name="open">Open</string>
+    <string name="confirm">OK</string>
+    <string name="cancle">Cancle</string>
+    <string name="search">Search</string>
+    <string name="disconnect">Disconnected</string>
+    <string name="status_self">Device stata：</string>
+    <string name="device_search">Search device:</string>
+    <string name="data_rev">Received data:</string>
+    <string name="row">Row number:</string>
+    <string name="select_choose">Protocol selection:</string>
+    
+    <string name="check_off">NO</string>
+    <string name="check_on">Checked</string>
+    <string name="check_len">Please enter the check length...</string>
+    <string name="title_one">Error 1 (intermittent Beep)</string>
+    <string name="title_two">Error 2 (continuous Beep)</string>
+    <string name="title_three">Error 3 (intermittent vibration)</string>
+    <string name="title_four">Error warning 4 (continuous vibration)</string>
+    <string name="save">Save</string>
+    <string name="close">Close</string>
+    
+    <string name="clear">Clear</string>
+    <string name="ord_input">Please enter the command word (00 acquisition version, 04 low power query)...</string>
+    
+    <string name="device">Device</string>
+    <string name="dev_add">Device address</string>
+    
+    <string name="connect">Connect</string>
+    
+    <string name="wrong_len_check">Length or check bit error</string>
+    
+    <string name="repeat">Repeat</string>
+    
+    <string name="faul_code">Fault code</string>
+    <string name="num_top_one">Bar code number has reached 1000, please long press the data column empty!</string>
+    <string name="num_top_two">Bar code number has reached 2000, please long press the data column empty!</string>
+    <string name="num_top_three">Bar code number has reached 3000, please long press the data column empty!</string>
+    <string name="ring_ver">Bluetooth ring version:</string>
+    <string name="battle_charge">A low battery, please charge it in time...</string>
+    <string name="battle_ok">The adequate power, ease of use</string>
+    <string name="con_fail">Connection failed!</string>
+    <string name="con_suc">Connect successfully</string>
+    <string name="searched">Search is completed!</string>
+    <string name="searching">In search...</string>
+    
+    <string name="status_change">State change</string>
+    <string name="pairing">Pairing...</string>
+    <string name="pairing_com">Pairing complete</string>
+    <string name="pairing_cancle">Pairing cancel</string>
+    
+    <string name="link_status_change">Link state change</string>
+    <string name="connected">Connected</string>
+    <string name="connecting">Connecting</string>
+    <string name="disConnected">Disconnected</string>
+    <string name="disConnecting">Disconnecting...</string>
+    <string name="bt_status_ch">Bluetooth switch status change</string>
+    <string name="bt_open">Bluetooth is open</string>
+    <string name="bt_openning">Opening Bluetooth...</string>
+    <string name="bt_close">Bluetooth is closed</string>
+    <string name="bt_closiing">Bluetooth is closing..."</string>
+    <string name="dev_closed">Device has been closed</string>
+    <string name="dev_opened">Device has been opened</string>
+    <string name="data_clean">Whether to empty the data?</string>
+    <string name="con_pre">Ready to connect...</string>
+    <string name="no_bt">This device does not support Bluetooth</string>
+    <string name="close_con">Disconnect connection!</string>
+    
+    <string name="bt_wrong">Bluetooth exception</string>
+    <string name="android_no_bt">This Android device does not support Bluetooth, please replace the device!</string>
+    <string name="selected">The agreement you choose is:</string>
+    <string name="BLE_TO_SPP">Equipment does not support BLE, the proposed use of SPP</string>
+    <string name="con_BLE">Connecting BLE device.</string>
+    <string name="send_data">Send data:</string>
+    <string name="con_ring">Please connect Bluetooth ring!</string>
+    <string name="data_check">Check data:</string>
+    
+    <string name="title_ring">Beep</string>
+    <string name="title_rate">Vibration</string>
+    <string name="ring_len">Prompt number</string>
+    
 </resources>
