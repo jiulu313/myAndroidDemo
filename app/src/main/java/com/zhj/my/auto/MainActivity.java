@@ -33,6 +33,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.speech.tts.TextToSpeech;
 import android.text.Editable;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -270,6 +271,13 @@ public class MainActivity extends Activity implements OnClickListener {
 					order = (String) map.get("order");
 					// Toast.makeText(MainActivity.this,
 					// "收到数据集："+map.toString(), Toast.LENGTH_SHORT).show();
+
+
+					//收到数据
+					SpeechUtils.getInstance(MainActivity.this).speakText(newstr);
+
+
+
 				} else {
 					Toast.makeText(MainActivity.this, getResources().getString(R.string.wrong_len_check),
 							Toast.LENGTH_SHORT).show();
