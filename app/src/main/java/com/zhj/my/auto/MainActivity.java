@@ -68,6 +68,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zhj.my.R;
+import com.zhj.my.utils.TTUtils;
 
 /**
  * 实现蓝牙SPP,HID,BLE协议
@@ -274,8 +275,8 @@ public class MainActivity extends Activity implements OnClickListener {
 
 
 					//收到数据
-					SpeechUtils.getInstance(MainActivity.this).speakText(newstr);
-
+//					SpeechUtils.getInstance(MainActivity.this).speakText(newstr);
+					TTUtils.getInstance().speak(newstr);
 
 
 				} else {
