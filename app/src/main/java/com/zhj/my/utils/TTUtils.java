@@ -45,6 +45,7 @@ public class TTUtils implements InitListener, SynthesizerListener {
         mTts.setParameter(SpeechConstant.VOLUME, "100");
         // 设置播放器音频流类型
         mTts.setParameter(SpeechConstant.STREAM_TYPE, "3");
+        // 设置数字合成时的读法
         mTts.setParameter("rdn","2");
         // 设置播放合成音频打断音乐播放，默认为true
         mTts.setParameter(SpeechConstant.KEY_REQUEST_FOCUS, "true");
